@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#172119" />
+    <title>Nam & Hằng — Wedding Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar"><a class="brand" href="#home">N <span>+</span> H</a><nav><a href="#album">Album</a><a href="#about">Câu chuyện</a><a href="#upload">Gửi ảnh</a></nav><button class="share" id="shareButton">Chia sẻ <span>↗</span></button></header>
+    <main>
+      <section class="hero" id="home"><div class="hero-copy"><p class="eyebrow">THE WEDDING OF</p><h1>Nam <i>&amp;</i> Hằng</h1><p class="date">14 . 02 . 2026 &nbsp;—&nbsp; Đà Lạt, Việt Nam</p><a class="scroll-link" href="#album">Khám phá kỷ niệm <span>↓</span></a></div><img class="hero-image" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1800&q=85" alt="Cặp đôi trong ngày cưới" /><div class="hero-caption">01 / 48<br />Bình minh ở Đà Lạt</div></section>
+      <section class="intro" id="about"><p class="eyebrow">MỘT NGÀY ĐÁNG NHỚ</p><p>Những nụ cười, cái ôm và khoảnh khắc chúng mình muốn giữ lại thật lâu.</p></section>
+      <section class="album" id="album"><div class="section-head"><div><p class="eyebrow">BỘ SƯU TẬP</p><h2>Những khung hình<br /><i>không thể quên</i></h2></div><p class="count">48 hình ảnh<br />được lưu giữ</p></div><div class="filters" role="tablist"><button class="active" data-filter="all">Tất cả <b>48</b></button><button data-filter="ceremony">Lễ cưới <b>18</b></button><button data-filter="party">Tiệc tối <b>16</b></button><button data-filter="friends">Bạn bè <b>14</b></button></div><div class="gallery" id="gallery"></div><button class="load-more" id="loadMore">Xem thêm khoảnh khắc <span>↓</span></button></section>
+      <section class="upload" id="upload"><div><p class="eyebrow">CÙNG LƯU GIỮ</p><h2>Bạn có một<br /><i>khoảnh khắc đẹp?</i></h2><p class="upload-text">Gửi những tấm ảnh bạn đã chụp trong ngày vui của chúng mình. Chúng sẽ được duyệt trước khi xuất hiện trong album.</p></div><label class="drop-zone" for="fileInput"><input id="fileInput" type="file" accept="image/*" multiple /><span class="plus">+</span><strong>Thêm hình ảnh</strong><small>JPG, PNG hoặc HEIC · tối đa 20 MB/hình</small></label></section>
+    </main>
+    <footer><div class="brand">N <span>+</span> H</div><p>Cảm ơn vì đã ở bên chúng mình.</p><p>© 2026 Nam &amp; Hằng</p></footer><dialog id="lightbox"><button class="close" aria-label="Đóng">×</button><img alt="Ảnh cưới phóng to" /><p></p></dialog><div class="toast" id="toast">Đã sao chép liên kết gallery</div><script src="./app.js"></script>
+  </body>
+</html>
