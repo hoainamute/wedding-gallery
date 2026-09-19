@@ -1,0 +1,16 @@
+name = "nam-hang-wedding-api"
+main = "src/index.js"
+compatibility_date = "2026-09-19"
+
+[[r2_buckets]]
+binding = "PHOTOS"
+bucket_name = "nam-hang-wedding-photos"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "nam-hang-wedding"
+database_id = "REPLACE_WITH_D1_DATABASE_ID"
+
+[vars]
+ALLOWED_ORIGIN = "https://hoainamute.github.io"
+SUPABASE_URL = "https://mxboycsmdxpcgchbifpq.supabase.co"
